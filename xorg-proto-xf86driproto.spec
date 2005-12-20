@@ -1,16 +1,15 @@
 Summary:	XF86DRI protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u XF86DRI i pomocnicze
 Name:		xorg-proto-xf86driproto
-Version:	2.0.1
+Version:	2.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/proto/xf86driproto-%{version}.tar.bz2
-# Source0-md5:	705f6b2ae275dce556689f7774770847
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/xf86driproto-%{version}.tar.bz2
+# Source0-md5:	5c1c51f0603f65d5476e3245dd188b2f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -57,6 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%doc ChangeLog
 %{_includedir}/GL/internal/dri_interface.h
 %dir %{_includedir}/X11/dri
 %{_includedir}/X11/dri/*.h
