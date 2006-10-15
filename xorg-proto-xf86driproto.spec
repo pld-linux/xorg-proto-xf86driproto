@@ -5,7 +5,7 @@ Version:	2.0.3
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/xf86driproto-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-%{version}.tar.bz2
 # Source0-md5:	e4a282cfd708b8892fca4425fee9cd7b
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
