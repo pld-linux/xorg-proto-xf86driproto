@@ -1,5 +1,5 @@
 Summary:	XF86DRI protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu XF86DRI i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu XF86DRI i pomocnicze
 Name:		xorg-proto-xf86driproto
 Version:	2.0.3
 Release:	2
@@ -21,7 +21,7 @@ Nagłówki protokołu XF86DRI i pomocnicze.
 
 %package devel
 Summary:	XF86DRI protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu XF86DRI i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu XF86DRI i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	libdrm-devel
 Requires:	xorg-proto-glproto-devel
