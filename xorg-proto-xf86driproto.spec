@@ -1,12 +1,12 @@
 Summary:	XF86DRI extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia XF86DRI
 Name:		xorg-proto-xf86driproto
-Version:	2.0.4
+Version:	2.1.0
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-%{version}.tar.bz2
-# Source0-md5:	01470d088da3a8a3deefa8e1f45d69cb
+# Source0-md5:	309d552732666c3333d7dc63e80d042f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
