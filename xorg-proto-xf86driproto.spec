@@ -1,36 +1,46 @@
 Summary:	XF86DRI extension headers
-Summary(pl.UTF-8):	Nagłówki rozszerzenia XF86DRI
+Summary(pl.UTF-8):	Pliki nagłówkowe rozszerzenia XF86DRI
 Name:		xorg-proto-xf86driproto
-Version:	2.1.0
+Version:	2.1.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-%{version}.tar.bz2
-# Source0-md5:	309d552732666c3333d7dc63e80d042f
+# Source0-md5:	1d716d0dac3b664e5ee20c69d34bc10e
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros >= 1.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XF86DRI extension headers.
+XF86DRI (XFree86 Direct Rendering Infrastructure) extension defines a
+protocol to allow user applications to access the video hardware
+without requiring data to be passed through the X server.
 
 %description -l pl.UTF-8
-Nagłówki rozszerzenia XF86DRI.
+Rozszerzenie XF86DRI (XFree86 Direct Rendering Infrastructure)
+definiuje protokół pozwalający aplikacjom użytkownika na dostęp do
+sprzętu wyświetlającego obraz bez potrzeby przekazywania danych
+poprzez serwer X.
 
 %package devel
 Summary:	XF86DRI extension headers
-Summary(pl.UTF-8):	Nagłówki rozszerzenia XF86DRI
+Summary(pl.UTF-8):	Pliki nagłówkowe rozszerzenia XF86DRI
 Group:		X11/Development/Libraries
 Requires:	libdrm-devel
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-XF86DRI extension headers.
+XF86DRI (XFree86 Direct Rendering Infrastructure) extension defines a
+protocol to allow user applications to access the video hardware
+without requiring data to be passed through the X server.
 
 %description devel -l pl.UTF-8
-Nagłówki rozszerzenia XF86DRI.
+Rozszerzenie XF86DRI (XFree86 Direct Rendering Infrastructure)
+definiuje protokół pozwalający aplikacjom użytkownika na dostęp do
+sprzętu wyświetlającego obraz bez potrzeby przekazywania danych
+poprzez serwer X.
 
 %prep
 %setup -q -n xf86driproto-%{version}
@@ -47,15 +57,14 @@ Nagłówki rozszerzenia XF86DRI.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	pkgconfigdir=%{_pkgconfigdir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %dir %{_includedir}/X11/dri
 %{_includedir}/X11/dri/xf86dri*.h
 %{_pkgconfigdir}/xf86driproto.pc
