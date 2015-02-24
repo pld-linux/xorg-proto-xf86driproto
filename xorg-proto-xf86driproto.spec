@@ -2,7 +2,7 @@ Summary:	XF86DRI extension headers
 Summary(pl.UTF-8):	Pliki nagłówkowe rozszerzenia XF86DRI
 Name:		xorg-proto-xf86driproto
 Version:	2.1.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/xf86driproto-%{version}.tar.bz2
